@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.table {
+    border-color: blue;
+    border-width: 10px;
+}
+
+.navbar {
+    color: blue;
+}
+
+.navbar-brand {
+    font-size: 15px;
+}
+
+.logo1 {
+    height: 15vh;
+    width: 15vw;
+    border-radius: 90px;
+}
+
+.logo {
+    height: 23vh;
+    width: 25vw;
+    justify-content: center;
+    border-radius: 90px;
+}
+
+.paragraph {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.CasualPage {
+    background-image: url('https://images.unsplash.com/photo-1541140134513-85a161dc4a00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 135vh;
+    background-size: cover;
+    padding: 5px;
+    margin: 5px;
+}
+
+.menshead {
+    color: green;
+    text-align: center;
+    font-size: 25px;
+}
+
+.head {
+    color: blue;
+    margin: 10px;
+}
+
+.para {
+    color: darkblue;
+    font-family: "Brush Script MT";
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    margin: 15px;
+}
+
+.casual {
+    display: flex;
+    flex-direction: row;
+}
+
+.casual1 {
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px;
+    border-color: gold;
+    border-width: 15px;
+    width: 36vw;
+
+}
+
+.image1 {
+    height: 30vh;
+    width: 25vw;
+    background-size: cover;
+    padding: 8px;
+
+}
+
+.container {
+    background-image: url('https://img.freepik.com/premium-vector/shopping-logo-design-template-with-bag_502185-127.jpg?w=1060');
+    height: 150vh;
+    background-size: cover;
+    width: 100%;
+}
+
+.name {
+    width: 65vw;
+}
+
+.form-heading {
+    font-family: "Roboto";
+    font-size: 36px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.error-message {
+    color: #dc3545;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.gender-field-heading {
+    color: #212529;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.HomeSection {
+    background-image: url("https://img.freepik.com/free-vector/grunge-watercolor-background-using-pastel-colours_1048-6530.jpg?w=740&t=st=1706287381~exp=1706287981~hmac=f844ab33bb67398719cb5f90daa78869b1ca5059da80d0893c10628d719f27c5");
+    height: 100vh;
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+}
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/93/94/66/1000_F_293946613_xowWOMY3AWlVVXeQtZxvmJYBr3wReYUR.jpg" class="logo1" />
+        <a class="navbar-brand" href="#Home">Home</a>
+        <a class="navbar-brand" href="#Casual">Casual</a>
+        <a class="navbar-brand" href="#Formal">Formal</a>
+        <a class="navbar-brand" href="#Ethnic">Ethnic</a>
+        <a class="navbar-brand" href="#Table">Table</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="form-heading">User</h1>
+        <form id="myForm">
+            <div class="mb-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control name" id="name" />
+
+            </div>
+            <div class="mb-3">
+                <label for="email">Phone Number</label>
+                <input type="text" class="form-control name" id="email" />
+
+            </div>
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="text" class="form-control name" id="email" />
+            </div>
+
+
+            <div class="mb-3">
+                <label for="email">Brand</label>
+                <input type="text" class="form-control name" id="email" />
+            </div>
+            <div class="mb-3">
+                <label for="email">measurements</label>
+                <input type="text" class="form-control name" id="email" />
+            </div>
+            <div class="mb-3">
+                <label for="status">Type</label>
+                <select id="status" class="form-control name">
+                    <option value="Active">Casual</option>
+                    <option value="Inactive">Formal</option>
+                    <option value="Active">Ethnic</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <h1 class="gender-field-heading">Gender</h1>
+                <input type="radio" name="gender" id="genderMale" value="Male"  />
+                <label for="genderMale">Male</label>
+                <input type="radio" name="gender" id="genderFemale" value="Female" class="ml-2" />
+                <label for="genderFemale">Female</label>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div id="Home" class="HomeSection d-flex flex-row justify-content-center">
+        <p class="para">Shop Away<br>
+            <img src="https://as1.ftcdn.net/v2/jpg/02/93/94/66/1000_F_293946613_xowWOMY3AWlVVXeQtZxvmJYBr3wReYUR.jpg" class="logo" />
+            <br>Wonder around the lines, pick everything you like.
+        </p>
+
+    </div>
+    <div id="Casual" class="CasualPage">
+        <h1 class="menshead">Mens Casual Wear</h1>
+        <h class="head">Deals Of The Day!!!!</h>
+        <div class="casual">
+            <div class="casual1">
+                <img src="https://wrogn.com/cdn/shop/files/1_852dfa16-3b90-48e2-a48a-6dd287c7606d.jpg?v=1704542013" class="image1" />
+                <ul>
+                    <li>Wrogn</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://kdbdeals.com/wp-content/uploads/2023/07/20230720_143831_0000.png" class="image1" />
+                <ul>
+                    <li>
+                        Levis
+                    </li>
+                    <li>40% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://m.media-amazon.com/images/I/31JgKDAF4NL._AC_.jpg" class="image1" />
+                <ul>
+                    <li>Puma</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="menshead">Womens Casual Wear</h1>
+        <h class="head">Deals Of The Day!!!!</h>
+        <div class="casual">
+            <div class="casual1">
+                <img src="https://m.media-amazon.com/images/I/41p7WKe07iL._SY741_.jpg" class="image1" />
+                <ul>
+                    <li>Qurvii</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230624/PLCe/6496a71feebac147fcfa2b6e/-473Wx593H-465563980-purple-MODEL.jpg" class="image1" />
+                <ul>
+                    <li>
+                        Miss Chase
+                    </li>
+                    <li>40% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://static.zara.net/photos///2023/I/0/3/p/0562/717/704/2/w/1920/0562717704_6_1_1.jpg?ts=1697008403084" class="image1" />
+                <ul>
+                    <li>Zara</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div id="Formal" class="CasualPage">
+        <h1 class="menshead">Mens Formal Wear</h1>
+        <h class="head">Deals Of The Day!!!!</h>
+        <div class="casual">
+            <div class="casual1">
+                <img src="https://wrogn.com/cdn/shop/files/1_852dfa16-3b90-48e2-a48a-6dd287c7606d.jpg?v=1704542013" class="image1" />
+                <ul>
+                    <li>Wrogn</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230228/07b1/63fe13adf997dde6f4d10b17/-473Wx593H-469433958-brown-MODEL.jpg" class="image1" />
+                <ul>
+                    <li>
+                        Arrow
+                    </li>
+                    <li>40% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/6/320105690/UG/MH/AX/192039720/mens-wear.jpeg" class="image1" />
+                <ul>
+                    <li>Mast & harbour</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="menshead">Womens Formal Wear</h1>
+        <h class="head">Deals Of The Day!!!!</h>
+        <div class="casual">
+            <div class="casual1">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230621/nHcl/64923449d55b7d0c63853a82/-473Wx593H-463525778-yellow-MODEL.jpg" class="image1" />
+                <ul>
+                    <li>CottinFab</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230629/RB1F/649cb5e8a9b42d15c917b6d7/-473Wx593H-465971059-white-MODEL.jpg" class="image1" />
+                <ul>
+                    <li>
+                        Style Quotient
+                    </li>
+                    <li>40% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/17198008/2022/7/12/25375eb8-df2d-4eab-85a0-2cf6bb4ff5311657604998575-Mast--Harbour-Women-Shirts-2021657604997946-1.jpg" class="image1" />
+                <ul>
+                    <li>Mast & habour</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div id="Formal" class="CasualPage">
+        <h1 class="menshead">Mens Ethnic Wear</h1>
+        <h class="head">Deals Of The Day!!!!</h>
+        <div class="casual">
+            <div class="casual1">
+                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23066632/2023/5/8/2307e840-32b0-461c-b603-0fc95aa2e3ec1683527586479KisahMensGreyKurtaSherwaniChuridarSet1.jpg" class="image1" />
+                <ul>
+                    <li>Manyavaar</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://www.jiomart.com/images/product/original/rv3sw81zuj/blacknight-en-passent-men-black-solid-pure-cotton-ethnic-dress-xl-product-images-rv3sw81zuj-0-202307072202.jpg?im=Resize=(500,630)" class="image1" />
+                <ul>
+                    <li>
+                        Logass
+                    </li>
+                    <li>40% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2023/9/344693043/VL/AL/QP/36385897/product-jpeg-500x500.jpg" class="image1" />
+                <ul>
+                    <li>Mast & harbour</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="menshead">Womens Ethnic Wear</h1>
+        <h class="head">Deals Of The Day!!!!</h>
+        <div class="casual">
+            <div class="casual1">
+                <img src="https://5.imimg.com/data5/JN/BE/ZY/SELLER-39100272/manas-classic-flair-style-top-dyed-ethnic-wear-kurtis-for-women-9.jpeg" class="image1" />
+                <ul>
+                    <li>Biba</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230602/TTGT/647988e442f9e729d7172b5a/-473Wx593H-466225156-mustard-MODEL.jpg" class="image1" />
+                <ul>
+                    <li>
+                        Aurelia
+                    </li>
+                    <li>40% OFF</li>
+                </ul>
+            </div>
+            <div class="casual1">
+                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg" class="image1" />
+                <ul>
+                    <li>Aavasa</li>
+                    <li>50% OFF</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div id="Table">
+        <table class="table" style="width:100%">
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+
+            </tr>
+            <tr>
+                <td>
+                    < p>
+                </td>
+                <td>This tag formats any text between the opening <p> tag and the closing </p> tag as a standard paragraph or main body text.</td>
+            </tr>
+            <tr>
+                <td>!DOCTYPE HTML</td>
+                <td>According to the HTML specification or standards, every HTML document requires a document type declaration.</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>The head tag in HTML is used to define the head portion of the document which contains information related to the document.</td>
+            </tr>
+            <tr>
+                <td>html</td>
+                <td>The html tag in HTML is used to define the root of HTML and XHTML documents.</td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>HTML Image, how to add the image in HTML. In earlier times, the web pages only contains textual content, which made them appear quite boring and uninteresting.</td>
+            </tr>
+            <tr>
+                <td>hr</td>
+                <td>The hr tag in HTML stands for horizontal rule and is used to insert a horizontal rule.</td>
+            </tr>
+            <tr>
+                <td>input</td>
+                <td>The input tag is used within < form> element to declare input controls that allow users to input data.</td>
+            </tr>
+            <tr>
+                <td>list</td>
+                <td>The list tag in HTML is used to define the list item in an HTML document. It is used within an Ordered List or Unordered List .</td>
+            </tr>
+            <tr>
+                <td>nav</td>
+                <td>The nav tag is used for declaring the navigational section in HTML documents. Websites typically have sections dedicated to navigational links, which enables users to navigate the site</td>
+            </tr>
+            <tr>
+                <td>script</td>
+                <td>The script tag in HTML is used to define the client-side script.</td>
+            </tr>
+            <tr>
+                <td>section</td>
+                <td>Section tag defines the section of documents such as chapters, headers, footers, or any other sections.</td>
+            </tr>
+            <tr>
+                <td>span</td>
+                <td>The HTML span element is a generic inline container for inline elements and content</td>
+            </tr>
+            <tr>
+                <td>style</td>
+                <td>The style tag in HTML helps us to design the web page.</td>
+            </tr>
+            <tr>
+                <td>table</td>
+                <td>HTML Table, various ways to implement it, & will also understand its usage through the examples. HTML Table is an arrangement of data in rows and columns, or possibly in a more complex structure</td>
+            </tr>
+            <tr>
+                <td>Form</td>
+                <td>The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</td>
+            </tr>
+            <tr>
+                <td>Frame</td>
+                <td>The <frame> tag was used in HTML 4 to define one particular window (frame) within a <frameset>.</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>
